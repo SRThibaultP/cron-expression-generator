@@ -28,7 +28,7 @@
 	<body>
 		<form id="cron">
 			<div>
-				<strong>Hours:</strong><br>
+				<strong>Heures:</strong><br>
 				<select size="12" multiple="multiple" name="cron-hours" id="cron-hours" onchange="updateField('hours')">
 					<option selected="selected" value="0">00</option>
 					<option selected="selected" value="1">01</option>
@@ -55,7 +55,7 @@
 					<option selected="selected" value="22">22</option>
 					<option selected="selected" value="23">23</option>
 				</select>
-				<a href="javascript:cronSelectAll('#cron-hours')">select all</a>
+				<a href="javascript:cronSelectAll('#cron-hours')">Tout sélectionner</a>
 			</div>
 			<div>
 				<strong>Minutes:</strong><br>
@@ -121,10 +121,10 @@
 					<option selected="selected" value="58">58</option>
 					<option selected="selected" value="59">59</option>
 				</select>
-				<a href="javascript:cronSelectAll('#cron-minutes')">select all</a>
+				<a href="javascript:cronSelectAll('#cron-minutes')">Tout sélectionner</a>
 			</div>
 			<div>
-				<strong>day of month:</strong><br>
+				<strong>Jour:</strong><br>
 				<select size="12" multiple="multiple" name="cron-dom" id="cron-dom" onchange="updateField('dom')">
 					<option selected="selected" value="1">01</option>
 					<option selected="selected" value="2">02</option>
@@ -158,54 +158,54 @@
 					<option selected="selected" value="30">30</option>
 					<option selected="selected" value="31">31</option>
 				</select>
-				<a href="javascript:cronSelectAll('#cron-dom')">select all</a>
+				<a href="javascript:cronSelectAll('#cron-dom')">Tout sélectionner</a>
 			</div>
 			<div>
-				<strong>month:</strong><br>
+				<strong>Mois:</strong><br>
 				<select size="12" multiple="multiple" name="cron-months" id="cron-months" onchange="updateField('months')">
-					<option selected="selected" value="1">Januar</option>
-					<option selected="selected" value="2">Februar</option>
-					<option selected="selected" value="3">März</option>
-					<option selected="selected" value="4">April</option>
+					<option selected="selected" value="1">Janvier</option>
+					<option selected="selected" value="2">Février</option>
+					<option selected="selected" value="3">Mars</option>
+					<option selected="selected" value="4">Avril</option>
 					<option selected="selected" value="5">Mai</option>
-					<option selected="selected" value="6">Juni</option>
-					<option selected="selected" value="7">Juli</option>
-					<option selected="selected" value="8">August</option>
-					<option selected="selected" value="9">September</option>
-					<option selected="selected" value="10">Oktober</option>
-					<option selected="selected" value="11">November</option>
-					<option selected="selected" value="12">Dezember</option>
+					<option selected="selected" value="6">Juin</option>
+					<option selected="selected" value="7">Juillet</option>
+					<option selected="selected" value="8">Août</option>
+					<option selected="selected" value="9">Septembre</option>
+					<option selected="selected" value="10">Octobre</option>
+					<option selected="selected" value="11">Novembre</option>
+					<option selected="selected" value="12">Décembre</option>
 				</select>
-				<a href="javascript:cronSelectAll('#cron-months')">select all</a>
+				<a href="javascript:cronSelectAll('#cron-months')">Tout sélectionner</a>
 			</div>
 			<div>
-				<strong>day of week:</strong><br>
+				<strong>Jour de la semaine:</strong><br>
 				<select size="12" multiple="multiple" name="cron-dow" id="cron-dow" onchange="updateField('dow')">
-					<option selected="selected" value="0">Sonntag</option>
-					<option selected="selected" value="1">Montag</option>
-					<option selected="selected" value="2">Dienstag</option>
-					<option selected="selected" value="3">Mittwoch</option>
-					<option selected="selected" value="4">Donnerstag</option>
-					<option selected="selected" value="5">Freitag</option>
-					<option selected="selected" value="6">Samstag</option>
+					<option selected="selected" value="1">Lundi</option>
+					<option selected="selected" value="2">Mardi</option>
+					<option selected="selected" value="3">Mercredi</option>
+					<option selected="selected" value="4">Jeudi</option>
+					<option selected="selected" value="5">Vendredi</option>
+					<option selected="selected" value="6">Samedi</option>
+					<option selected="selected" value="0">Dimanche</option>
 				</select>
-				<a href="javascript:cronSelectAll('#cron-dow')">select all</a>
+				<a href="javascript:cronSelectAll('#cron-dow')">Tout sélectionner</a>
 			</div>
 			<span style="display:block;clear:both">&nbsp;</span>
 		</form>
 		<div id="cron-vorlagen">
 			<ul>
-				<li><a href="javascript:cronTemplate(0);">Alles auswählen</a></li>
-				<li><a href="javascript:cronTemplate(1);">Alle 5 Minuten</a></li>
-				<li><a href="javascript:cronTemplate(2);">Alle 15 Minuten</a></li>
-				<li><a href="javascript:cronTemplate(3);">Alle 30 Minuten</a></li>
-				<li><a href="javascript:cronTemplate(4);">Jede Stunde</a></li>
-				<li><a href="javascript:cronTemplate(5);">Alle 3 Stunden</a></li>
-				<li><a href="javascript:cronTemplate(6);">Alle 4 Stunden</a></li>
-				<li><a href="javascript:cronTemplate(7);">Alle 6 Stunden</a></li>
-				<li><a href="javascript:cronTemplate(8);">Alle 12 Stunden</a></li>
-				<li><a href="javascript:cronTemplate(9);">Jeden Tag um 0:30 Uhr</a></li>
-				<li><a href="javascript:cronTemplate(10);">Jeden Sonntag um 0:10 Uhr</a></li>
+				<li><a href="javascript:cronTemplate(0);">Tout sélectionner</a></li>
+				<li><a href="javascript:cronTemplate(1);">Toutes les 5 minutes</a></li>
+				<li><a href="javascript:cronTemplate(2);">Toutes les 15 minutes</a></li>
+				<li><a href="javascript:cronTemplate(3);">Toutes les 30 minutes</a></li>
+				<li><a href="javascript:cronTemplate(4);">Toutes les heures</a></li>
+				<li><a href="javascript:cronTemplate(5);">Toutes les 3 heures</a></li>
+				<li><a href="javascript:cronTemplate(6);">Toutes les 4 heures</a></li>
+				<li><a href="javascript:cronTemplate(7);">Toutes les 6 heures</a></li>
+				<li><a href="javascript:cronTemplate(8);">Toutes les 12 heures</a></li>
+				<li><a href="javascript:cronTemplate(9);">Tout les jours à 00:30</a></li>
+				<li><a href="javascript:cronTemplate(10);">Tout les jours à 00:10</a></li>
 			</ul>
 		</div>
 		<div>
